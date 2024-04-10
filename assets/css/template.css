@@ -1030,20 +1030,15 @@ featured
   border-radius: 15px;
 }
 
-.featured-items .item .thumb:hover .hover-effect {
-  top: 0;
-  opacity: 1;
-}
-
 .featured-items .item .thumb .hover-effect {
   background-color: rgba(250,250,250,0.92);
   left: 0;
-  top: 100%;
+  top: 0;
   width: 100%;
   height: 100%;
   border-radius: 10px;
   position: absolute;
-  opacity: 0;
+  opacity: 1;
   transition: all .3s;
 }
 
@@ -2615,6 +2610,12 @@ body {
   }
   .featured-contests .item .hover-effect .content .info {
     display: flex !important;
+  }
+  .featured-contests .item .hover-effect {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    transition: all .5s;
   }
 }
 
